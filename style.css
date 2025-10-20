@@ -120,4 +120,188 @@ section ul {
     flex-direction: column;
     width: 90%;
   }
+
+  form {
+  padding: 6rem;
+}
+}
+
+. {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  display: flex;
+}
+
+
+/* CONTACT FORM STYLING */
+.contact-page {
+  background-color: #e0f7fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 77, 77, 0.2);
+  padding: 10rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #007c91;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 2px solid #00acc1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007c91;
+}
+
+button {
+  background-color: #00acc1;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+button:focus {
+  background-color: #007c91;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+}
+
+.success-message {
+  color: green;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+.about-page {
+  background-color: #e0f7fa;
+  color: #004d4d;
+  padding: 2rem;
+}
+
+.about-page section {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 77, 77, 0.15);
+}
+
+.about-page h2 {
+  color: #007c91;
+  border-bottom: 2px solid #00acc1;
+  margin-bottom: 1rem;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+  /* Navigation alignment */
+  nav {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
+  /* CONTACT PAGE */
+  .contact-page {
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+
+  form {
+    padding: 5rem;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  /* ABOUT PAGE */
+  .about-page {
+    padding: 1rem;
+  }
+
+  .about-page section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-page p,
+  .about-page ul {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about-page section {
+    border-radius: 10px;
+  }
 }

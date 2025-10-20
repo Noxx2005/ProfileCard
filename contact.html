@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Bot Peter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div>
+    <div class="top">
+    <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="contact.html">Contact</a>
+    </nav>
+    </div>
+  <div class="bottom">
+  <main class="contact-page">
+    <h1>Contact Us</h1>
+
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          data-testid="test-contact-name"
+          required
+          aria-describedby="test-contact-error-name"
+        />
+        <span id="test-contact-error-name" class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          data-testid="test-contact-email"
+          required
+          aria-describedby="test-contact-error-email"
+        />
+        <span id="test-contact-error-email" class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          data-testid="test-contact-subject"
+          required
+          aria-describedby="test-contact-error-subject"
+        />
+        <span id="test-contact-error-subject" class="error-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="4"
+          data-testid="test-contact-message"
+          required
+          aria-describedby="test-contact-error-message"
+        ></textarea>
+        <span id="test-contact-error-message" class="error-message"></span>
+      </div>
+
+      <button type="submit" data-testid="test-contact-submit">Submit</button>
+      <p id="test-contact-success" class="success-message" hidden>
+        Message sent successfully!
+      </p>
+    </form>
+  </main>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
